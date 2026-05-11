@@ -23,9 +23,9 @@ empresarial útil.
 ## Dataset
 Fuente: [Kaggle — Amazon Product Reviews](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews)
 
-- 568,454 reviews across multiple product categories
-- Score: 1–5 stars (converted to positive/negative labels)
-- Key columns: `Text` (review body), `Score`, `Summary`
+- 568.454 reseñas en múltiples categorías de productos
+- Score: 1–5 estrellas (convertidas a etiquetas positivas/negativas)
+- Columnas clave: `Text` (review body), `Score`, `Summary`
 
 ## Metodología
 
@@ -101,10 +101,6 @@ cd amazon-sentiment-analysis
 pip install -r requirements.txt
 ```
 Download dataset from Kaggle and place `Reviews.csv` in `/data`.
-Run notebooks in order:
-1. `01_eda.ipynb`
-2. `02_preprocessing.ipynb`
-3. `03_modeling.ipynb`
 
 ## Tech stack
 `Python` `Pandas` `NLTK` `Scikit-learn` `TF-IDF` `Logistic Regression`
