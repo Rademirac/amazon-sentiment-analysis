@@ -39,10 +39,10 @@ para eliminar el sesgo por desequilibrio de clases
 Hallazgos clave:
 - 📏 Las reseñas negativas son, en promedio, 69 caracteres más largas
 que las positivas: los clientes frustrados escriben más.
-- 🔤 Palabras como "gustar" y "sabor" aparecen en ambas categorías,
+- 🔤 Palabras como "like" y "taste" aparecen en ambas categorías,
 lo que las convierte en indicadores de sentimiento deficientes.
 - ❌ Hallazgo crítico: la eliminación estándar de palabras vacías elimina
-"no", "nunca", "no", destruyendo el contexto de negación.
+"not", "never", "no", destruyendo el contexto de negación.
 
 ![Review length distribution](images/text_length_distribution.png)
 ![Top words positive](images/top_words_positive.png)
@@ -60,7 +60,7 @@ clean_text(review):
 
 ### 4. Vectorización
 Se utilizó **TF-IDF** con bigramas (`ngram_range=(1,2)`, `max_features=10,000`).
-Los bigramas capturan frases de dos palabras como «no es bueno» o «muy recomendable» 
+Los bigramas capturan frases de dos palabras como «not good» o «highly recommended» 
 como unidades individuales, lo cual es fundamental para la detección de sentimientos.
 
 ### 5. Comparación de modelos
